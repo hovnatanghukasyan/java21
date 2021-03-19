@@ -1,3 +1,5 @@
+package Lesson3;
+
 public class Task6 {
     public static void main(String[] args) {
         int[] sixthTaskArray = {6, 20, 29, 34, 48, 55, 77, 79};
