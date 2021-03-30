@@ -1,13 +1,14 @@
 package Social_Network;
 
 public class User {
-    private String username;
+    protected String username;
     private String mail;
     private Boolean isPremium;
     private String gender = "invalid gender";
     private int age;
     private String education;
     private Boolean isRegistered;
+
 
     public String getUsername() {
         return username;
@@ -75,5 +76,6 @@ public class User {
         result = result + " " + username + " ***" + returnableUName + " ";
         return result;
     }
+
 
 }
