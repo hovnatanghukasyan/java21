@@ -1,6 +1,6 @@
 package Social_Network;
 
-public class User {
+public class User{
     protected String username;
     private String mail;
     private Boolean isPremium;
