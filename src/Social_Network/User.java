@@ -1,10 +1,16 @@
 package Social_Network;
 
-public class User{
+import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+    @SerializedName("username")
     protected String username;
     private String mail;
     private Boolean isPremium;
     private String gender = "invalid gender";
+    @SerializedName("age")
     private int age;
     private String education;
     private Boolean isRegistered;
@@ -17,6 +23,12 @@ public class User{
     public void setUsername(String username) {
         this.username = username;
     }
+
+    public User(String username, int age) {
+        this.username = username;
+        this.age = age;
+    }
+    public User(){}
 
     public String getMail() {
         return mail;
@@ -77,5 +89,10 @@ public class User{
         return result;
     }
 
-
+    @Override
+    public String toString() {
+        return
+                "username = " + username + '\n' +
+                "age = " + age ;
+    }
 }
