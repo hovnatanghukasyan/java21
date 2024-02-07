@@ -44,4 +44,5 @@ public class Exercise2 {
         System.out.println(secondLine);
         System.out.println(firstLine);
     }
+
 }
